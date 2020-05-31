@@ -55,7 +55,7 @@ if [[ ! $node_version =~ v12..* ]]; then
 fi
 
 # Setup the notifier
-install_version=$(node -p -e "require('/opt/LanFlix/package.json').version")
+install_version=$(node -p -e "require('$INSTALL_DIRECTORY/package.json').version")
 current_version=$(node -p -e "require('./package.json').version")
 
 if [[ ! $install_version == $current_version ]]; then
@@ -67,4 +67,15 @@ else
   echo Notifier up to date!
 fi
 
+# Login with firebase? https://firebase.google.com/docs/cli/
+sudo npm install -g firebase-tools
+firebase login:ci
+firebase init firestore
+
+# Create database template
+# Use the notifier libraries to read and write the template
+
 # Setup the systemctl process
+
+# Check if sonarr is installed, set script there?
+# Check if radarr is installed, set script there?
