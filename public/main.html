@@ -24,7 +24,6 @@
 		<script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 
 		<!-- Local Scripts -->
-		
 		<script defer type='text/javascript' charset='utf8' src='src/libs/auth/login.js'></script>
 		<script defer type='text/javascript' charset='utf8' src='src/libs/auth/register.js'></script>
 		<script defer type='text/javascript' charset='utf8' src='src/libs/nav/topbar.js'></script>
@@ -55,11 +54,12 @@
 		<div id='banner' class="hero-image">
 			<div class="hero-text">
 				<img src='images/logo.png'>
-				</div>
+			</div>
 		</div> 
 		<div id='topbar' class='tab'>
 			<button class='tablinks' id='show-select-btn' onclick="selectPage(event, 'shows-page')"><i class="fas fa-tv fa-sm"></i> Shows</button>
 			<button class='tablinks' id='movie-select-btn' onclick="selectPage(event, 'movies-page')"><i class="fas fa-film fa-sm"></i> Movies</button>
+			<button class='tablinks' id='admin-select-btn'><i class="fas fa-user-shield"></i> Admin</button>
 			<div class='right-top-bar'>
 				<button id='request-show-button'><i class="fas fa-plus"></i> Request TV Show</button>
 				<button id='request-movie-button'><i class="fas fa-plus"></i> Request Movie</button>

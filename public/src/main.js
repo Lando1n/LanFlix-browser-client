@@ -31,6 +31,10 @@ firebase.auth().onAuthStateChanged(async (user) => {
   }
 });
 
+$("#admin-select-btn").on("click", () => {
+  window.location = "admin.html";
+});
+
 $("#movies-tbl").DataTable({
   iDisplayLength: 15,
   order: [[0, "asc"]],
