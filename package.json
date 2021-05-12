@@ -19,7 +19,7 @@
   "dependencies": {
     "firebase": "^8.2.7",
     "firebase-admin": "^9.5.0",
-    "nodemailer": "^6.4.5"
+    "nodemailer": "^6.4.16"
   },
   "devDependencies": {
     "codeceptjs": "^3.0.5",
